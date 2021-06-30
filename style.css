@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #4F759B, #92C9B1, #A2FAA3);
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+#ap1{
+    display: block;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(252, 250, 250, 0.884);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(185, 179, 179);
+}
+
+.contAva{
+    display: flex;
+}
+
+.cont p{
+    margin-bottom: 20px;
+}
+
+.ava{
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(212, 208, 208);
+    padding: 30px;
+}
+
+#nsei{
+    width: 150px;
+}
+
+.ava p{
+    margin-top: 20px;
+}
+
+.ava:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(66, 64, 64);
+}
+
+#no:hover{
+    background-color: rgba(137, 174, 255, 0.664);
+}
+
+
+#nsei:hover{
+    background-color: rgba(255, 166, 0, 0.685);
+}
+
+#sim:hover{
+    background-color: rgba(139, 219, 20, 0.671);
+}
+
+.atno{
+    background-color: rgba(137, 174, 255, 0.664);
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(66, 64, 64);
+    padding: 30px;
+}
+
+.atno p{
+    margin-top: 20px;
+}
+
+.atnsei{
+    background-color: rgba(255, 166, 0, 0.685);
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(66, 64, 64);
+    padding: 30px;
+}
+
+.atnsei p{
+    margin-top: 20px;
+}
+
+.atsim{
+    background-color: rgba(139, 219, 20, 0.671);
+    margin: 20px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(66, 64, 64);
+    padding: 30px;
+}
+
+.atsim p{
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 15px;
+    width: 150px;
+    padding: 7px;
+    font-size: 1em;
+    background-color: rgb(50, 96, 224);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#ap2{
+    display: none;
+    text-align: center;
+    background-color: rgba(252, 250, 250, 0.884);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(185, 179, 179);
+}
+
+#ap2 h3,p{
+    margin: 20px;
+}

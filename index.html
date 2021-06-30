@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação</title>
+</head>
+<body>
+<div id="ap1">    
+    <div class="cont">
+        <h1>Sua opinião é importante para nós!</h1>
+        <p>Indicaria nosso serviço para um amigo?</p>
+        <div class="contAva">
+        <div class="ava" id="no" onclick="aval1()">
+            <img src="images/no.png" alt="nao">
+            <p>Não indicaria</p>
+        </div>
+        <div class="ava" id="nsei" onclick="aval2()">
+            <img src="images/nsei.png" alt="nsei">
+            <p>Não sei</p>
+        </div>
+        <div class="ava" id="sim" onclick="aval3()">
+            <img src="images/sim.png" alt="sim">
+            <p>Com certeza</p>
+        </div>
+        </div>
+        <button onclick="res()">Enviar</button>
+    </div>
+</div>    
+<div id="ap2">
+    <img src="images/fdb.png" alt="feedback">
+    <h1>Muito obrigado!</h1>
+    <h3 id="feedback"></h3>
+    <p>Seu feedback nos ajuda a melhorar nosso serviço</p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
