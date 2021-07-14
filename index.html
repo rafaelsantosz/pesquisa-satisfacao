@@ -5,36 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Avaliação</title>
+    <title>Avaliação Cliente</title>
 </head>
-<body>
-<div id="ap1">    
-    <div class="cont">
+<body>   
+    <div id="container">
         <h1>Sua opinião é importante para nós!</h1>
         <p>Indicaria nosso serviço para um amigo?</p>
-        <div class="contAva">
-        <div class="ava" id="no" onclick="aval1()">
-            <img src="images/no.png" alt="nao">
-            <p>Não indicaria</p>
+        <div class="avaliacoes" id="nao" onclick="ativar(this)">
+            <img src="images/no.png" alt="não">
+            <span>Não indicaria</span>
         </div>
-        <div class="ava" id="nsei" onclick="aval2()">
-            <img src="images/nsei.png" alt="nsei">
-            <p>Não sei</p>
+        <div class="avaliacoes" id="nsei" onclick="ativar(this)">
+            <img src="images/nsei.png" alt="não sei">
+            <span id="span1">Não sei</span>
+            <span id="span2">Não<br>sei</span>
         </div>
-        <div class="ava" id="sim" onclick="aval3()">
+        <div class="avaliacoes" id="sim" onclick="ativar(this)">
             <img src="images/sim.png" alt="sim">
-            <p>Com certeza</p>
+            <span>Com certeza</span>
         </div>
+        <div class="botao">
+            <button onclick="resultado()">Enviar</button>
         </div>
-        <button onclick="res()">Enviar</button>
     </div>
-</div>    
-<div id="ap2">
-    <img src="images/fdb.png" alt="feedback">
-    <h1>Muito obrigado!</h1>
-    <h3 id="feedback"></h3>
-    <p>Seu feedback nos ajuda a melhorar nosso serviço</p>
-</div>
+    <div id="blocoFinal">
+        <img src="images/fdb.png" alt="feedback">
+        <h1>Muito obrigado!</h1>
+        <h3 id="feedback"></h3>
+        <p>Seu feedback nos ajuda a melhorar nosso serviço</p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

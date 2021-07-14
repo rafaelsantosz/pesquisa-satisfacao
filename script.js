@@ -1,47 +1,45 @@
-var no=document.getElementById('no')
+var nao=document.getElementById('nao')
 var nsei=document.getElementById('nsei')
 var sim=document.getElementById('sim')
 var msg=""
 
-function aval1(){
-    msg="Não indicaria"
-    no.classList.remove('ava')
-    no.classList.add('atno')
-    nsei.classList.remove('atnsei')
-    nsei.classList.add('ava')
-    sim.classList.remove('atsim')
-    sim.classList.add('ava')
+function ativar(avaliacao){
+    if(avaliacao==nao){
+        msg="Não indicaria"
+        avaliacao.classList.remove('avaliacoes')
+        avaliacao.classList.add('naoAtivo')
+        nsei.classList.remove('nseiAtivo')
+        nsei.classList.add('avaliacoes')
+        sim.classList.remove('simAtivo')
+        sim.classList.add('avaliacoes')  
+    }else if(avaliacao==nsei){
+        msg="Não sei"
+        avaliacao.classList.remove('avaliacoes')
+        avaliacao.classList.add('nseiAtivo')
+        nao.classList.remove('naoAtivo')
+        nao.classList.add('avaliacoes')
+        sim.classList.remove('simAtivo')
+        sim.classList.add('avaliacoes')
+    }else{
+        msg="Com certeza"
+        avaliacao.classList.remove('avaliacoes')
+        avaliacao.classList.add('simAtivo')
+        nao.classList.remove('naoAtivo')
+        nao.classList.add('avaliacoes')
+        nsei.classList.remove('nseiAtivo')
+        nsei.classList.add('avaliacoes')
+    }
 }
 
-function aval2(){
-    msg="Não sei"
-    no.classList.remove('atno')
-    no.classList.add('ava')
-    nsei.classList.remove('ava')
-    nsei.classList.add('atnsei')
-    sim.classList.remove('atsim')
-    sim.classList.add('ava')
-}
-
-function aval3(){
-    msg="Com certeza"
-    no.classList.remove('atno')
-    no.classList.add('ava')
-    nsei.classList.remove('atnsei')
-    nsei.classList.add('ava')
-    sim.classList.remove('ava')
-    sim.classList.add('atsim')
-}
-
-function res(){
-    var ap1=document.getElementById('ap1')
-    var ap2=document.getElementById('ap2')
+function resultado(){
+    var container=document.getElementById('container')
+    var blocoFinal=document.getElementById('blocoFinal')
     var feedback=document.getElementById('feedback')
     if(msg==""){
         window.alert('Deixe sua opinião!')
     }else{
-        ap1.style.display='none'
-        ap2.style.display='block'
+        container.style.display='none'
+        blocoFinal.style.display='block'
         feedback.innerHTML+=`Feedback: ${msg}`
     }
 }
